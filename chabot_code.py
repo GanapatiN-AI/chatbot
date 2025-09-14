@@ -10,7 +10,7 @@ from google.genai import types
 # ----------------------------
 
 
-os.environ["GOOGLE_API_KEY"] = "AIzaSyDAOcP7uNLrb2F_0w8MpXIK8OeXoi-pwfo"
+os.environ["GOOGLE_API_KEY"] = os.getenv("GOOGLE_API_KEY")
 os.environ["GOOGLE_GENAI_USE_VERTEXAI"] = "False"
 print("✅ API Keys configured.")
 
